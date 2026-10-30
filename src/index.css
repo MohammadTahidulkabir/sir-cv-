@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --accent-color: #059669;
+    --accent-color-hover: #047857;
+    --accent-color-dark: #10b981;
+    --app-radius: 12px;
+  }
+
+  /* Font Theme 1: Editorial Academic */
+  html[data-font-theme="editorial"] {
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+
+  /* Font Theme 2: Modern Technical */
+  html[data-font-theme="technical"] {
+    --font-display: 'Outfit', system-ui, sans-serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  /* Font Theme 3: Contemporary Geometric */
+  html[data-font-theme="geometric"] {
+    --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Night Mood Atmosphere Presets */
+html[data-night-mood="candlelight"].dark body {
+  background-color: #120e0b !important;
+  color: #fbf5ec !important;
+}
+
+html[data-night-mood="candlelight"].dark .dark\:bg-neutral-950,
+html[data-night-mood="candlelight"].dark .dark\:bg-neutral-950\/90,
+html[data-night-mood="candlelight"].dark header {
+  background-color: rgba(18, 14, 11, 0.94) !important;
+}
+
+html[data-night-mood="candlelight"].dark .dark\:bg-neutral-900 {
+  background-color: #1a1510 !important;
+}
+
+html[data-night-mood="candlelight"].dark .dark\:bg-neutral-800,
+html[data-night-mood="candlelight"].dark .dark\:bg-neutral-800\/50 {
+  background-color: #261f18 !important;
+}
+
+html[data-night-mood="candlelight"].dark .dark\:border-neutral-800,
+html[data-night-mood="candlelight"].dark .dark\:border-neutral-700 {
+  border-color: #31251c !important;
+}
+
+html[data-night-mood="candlelight"].dark .dark\:text-neutral-400,
+html[data-night-mood="candlelight"].dark .dark\:text-neutral-300 {
+  color: #bfaea0 !important;
+}
+
+/* Midnight Deep Space OLED */
+html[data-night-mood="midnight"].dark body {
+  background-color: #030408 !important;
+  color: #f1f5f9 !important;
+}
+
+html[data-night-mood="midnight"].dark .dark\:bg-neutral-950,
+html[data-night-mood="midnight"].dark .dark\:bg-neutral-950\/90,
+html[data-night-mood="midnight"].dark header {
+  background-color: rgba(3, 4, 8, 0.94) !important;
+}
+
+html[data-night-mood="midnight"].dark .dark\:bg-neutral-900 {
+  background-color: #0a0d16 !important;
+}
+
+html[data-night-mood="midnight"].dark .dark\:bg-neutral-800 {
+  background-color: #111624 !important;
+}
+
+html[data-night-mood="midnight"].dark .dark\:border-neutral-800 {
+  border-color: #172033 !important;
+}
+
+/* Nordic Aurora Night */
+html[data-night-mood="aurora"].dark body {
+  background-color: #040e13 !important;
+  color: #ecfdf5 !important;
+}
+
+html[data-night-mood="aurora"].dark .dark\:bg-neutral-950,
+html[data-night-mood="aurora"].dark .dark\:bg-neutral-950\/90,
+html[data-night-mood="aurora"].dark header {
+  background-color: rgba(4, 14, 19, 0.94) !important;
+}
+
+html[data-night-mood="aurora"].dark .dark\:bg-neutral-900 {
+  background-color: #091a22 !important;
+}
+
+html[data-night-mood="aurora"].dark .dark\:bg-neutral-800 {
+  background-color: #0f2733 !important;
+}
+
+html[data-night-mood="aurora"].dark .dark\:border-neutral-800 {
+  border-color: #163645 !important;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+

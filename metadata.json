@@ -1,0 +1,6 @@
+{
+  "name": "Shuvro Sen - Academic Portfolio & Trajectory Dashboard",
+  "description": "Interactive academic portfolio, skill analysis engine, trajectory dashboard, publication registry, and secure document vault for Shuvro Sen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
